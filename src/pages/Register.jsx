@@ -7,7 +7,7 @@ export default function Register() {
   const [password, setPassword] = useState('');
   const [fullname, setFullname] = useState('');
   const navigate = useNavigate();
-
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
